@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarter Indicator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>     
+    
+    <div class="body">
+        <div id="inp">
+            <input id="searchbar" onkeyup="search_quarter()" type="text"
+                name="search" placeholder="Search Quarters (Max 14 Characters)">
+        </div>  
+        <div>
+            <div class="btnd">
+                <button id="1" class="bt" onclick="sqbybtn(this)" value="NW">NW</button>
+                <button id="2" class="bt" onclick="sqbybtn(this)" value="NE">NE</button>
+                <button id="3" class="bt" onclick="sqbybtn(this)" value="SW">SW</button>
+                <button id="4" class="bt" onclick="sqbybtn(this)" value="SE">SE</button>
+                <button id="5" class="bt" onclick="sqbybtn(this)" value="NH">NH</button>
+                <button id="6" class="bt" onclick="sqbybtn(this)" value="SH">SH</button>
+                <button id="7" class="bt" onclick="sqbybtn(this)" value="WH">WH</button>
+                <button id="8" class="bt" onclick="sqbybtn(this)" value="EH">EH</button>
+                <button id="9" class="bt" onclick="sqbybtn(this)"><i class="material-icons" style="font-size:2vmin;color:yellow">backspace</i></button>
+                <button id="10" class="bt" onclick="sqbybtn(this)">Clear</button>
+            </div>
+            <div id="board"></div>
+        </div>      
+        <div class = "footersec">
+            <p>&copy;Copywrite sk.md.aliakbar</p>
+        </div>s
+    
+    </div>
+    
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+</html>

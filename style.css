@@ -1,0 +1,71 @@
+*{  padding: 0; margin: 0; outline: 0; }
+
+.body{
+    
+    min-height: 100vh;
+    background-size: 100vw 120vh;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#inp{    
+    height: 5vmin;
+    width: 90vmin;
+    margin-bottom: 1%;
+}
+
+#searchbar{    
+    font-size: 1.2em;
+    padding: 1%;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 25%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 60% */
+  input[type=text]:focus {
+    width: 60%;
+  }
+
+.btnd{
+    width: 90vmin;
+    margin-bottom: 1vmin;
+}
+.bt{
+    width: 8.4vmin;
+    height: 5vmin; 
+    border-radius: 5px; 
+    background: linear-gradient(rgb(2, 66, 14),rgb(19, 38, 207), rgb(2, 66, 14));  
+    color: rgb(238, 255, 0);
+}
+
+#board{
+    background: linear-gradient(rgb(132, 218, 132), rgb(218, 218, 131));
+    height: 90vmin;
+    width: 90vmin;
+    display: grid;
+    grid-template-rows: repeat(128, 1fr);
+    grid-template-columns: repeat(128, 1fr);
+}
+
+
+.footersec{
+    overflow: hidden;
+    width: 90vmin; 
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    height: 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #004400;      
+  }
+ 
